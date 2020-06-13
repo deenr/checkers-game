@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkers.Uitleg2Controller">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="pane" layoutX="10.0" layoutY="10.0" prefHeight="583.0" prefWidth="1050.0">
+         <children>
+            <Button fx:id="btnNext" layoutX="984.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnNextHandler" text="Next" />
+            <Button fx:id="btnBack" layoutX="924.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnBackHandler" text="Back" />
+            <Label layoutX="62.0" layoutY="37.0" prefHeight="55.0" prefWidth="647.0" text="Speluitleg" textFill="RED">
+               <font>
+                  <Font name="System Italic" size="55.0" />
+               </font>
+            </Label>
+            <Line endX="155.0" layoutX="163.0" layoutY="118.0" startX="-127.0" />
+            <Label layoutX="383.0" layoutY="37.0" prefHeight="77.0" prefWidth="345.0" text="dubbele dam">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="138.0" prefHeight="31.0" prefWidth="848.0" text="Als je één van jouw pionnen naar de andere kant kunt brengen dan wordt deze pion een dubbele dam.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="169.0" prefHeight="27.0" prefWidth="741.0" text="Een dubbele dam kan elke richting uit. ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="foto2" fitHeight="309.0" fitWidth="356.0" layoutX="349.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="62.0" layoutY="196.0" prefHeight="27.0" prefWidth="801.0" text="Een dubbele dam kan je herkennen, de pion heeft een oranje rand.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="foto3" fitHeight="298.0" fitWidth="345.0" layoutX="709.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="foto1" fitHeight="270.0" fitWidth="345.0" layoutX="1.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnSetFoto" layoutX="62.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnSetFoto" text="Voorbeelden" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="DAMMEN_Dean-Reymen_Sven-Kumpen_Yannick-Cleas.jnlp">
+  <information>
+    <title>DAMMEN_Dean-Reymen_Sven-Kumpen_Yannick-Cleas</title>
+    <vendor>Yannick Claes</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="DAMMEN_Dean-Reymen_Sven-Kumpen_Yannick-Cleas.jar" size="144936" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="DAMMEN_Dean-Reymen_Sven-Kumpen_Yannick-Cleas" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="checkers.CheckersMain"  name="DAMMEN_Dean-Reymen_Sven-Kumpen_Yannick-Cleas" />
+  <update check="always"/>
+</jnlp>

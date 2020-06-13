@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="checkers.Uitleg5Controller">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="pane" layoutX="10.0" layoutY="10.0" prefHeight="583.0" prefWidth="1050.0">
+         <children>
+            <Button fx:id="btnNext" layoutX="984.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnNextHandler" text="Next" />
+            <Button fx:id="btnBack" layoutX="924.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnBackHandler" text="Back" />
+            <Label layoutX="62.0" layoutY="37.0" prefHeight="55.0" prefWidth="647.0" text="Speluitleg" textFill="RED">
+               <font>
+                  <Font name="System Italic" size="55.0" />
+               </font>
+            </Label>
+            <Line endX="155.0" layoutX="163.0" layoutY="118.0" startX="-127.0" />
+            <Label layoutX="383.0" layoutY="37.0" prefHeight="77.0" prefWidth="483.0" text="een pion veroveren">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="foto2" fitHeight="309.0" fitWidth="356.0" layoutX="619.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="foto1" fitHeight="301.0" fitWidth="372.0" layoutX="52.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnSetFoto" layoutX="62.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnSetFoto" text="Voorbeelden" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="72.0" layoutY="165.0" prefHeight="31.0" prefWidth="983.0" text="Je kan een pion veroveren als jouw pion diagonaal staat met een andere pion en het vlak diagonaal erachter is vrij.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="196.0" prefHeight="27.0" prefWidth="741.0" text="Het vlak waar je naar toe kan als er geen andere pion is wordt groen gekleurd.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="223.0" prefHeight="27.0" prefWidth="801.0" text="De pion van de tegenstander wordt verwijderd van het veld.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

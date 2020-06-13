@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkers.CheckersViewController">
+    <children>
+      <AnchorPane fx:id="ankerpane" layoutX="18.0" layoutY="14.0" onDragDetected="#ankerPaneHandeler" prefHeight="364.0" prefWidth="423.0" />
+        <Label fx:id="lblGedaan" layoutX="448.0" layoutY="98.0" minHeight="16" minWidth="69" prefHeight="31.0" prefWidth="192.0" />
+      <Button fx:id="btnReset" layoutX="520.0" layoutY="53.0" mnemonicParsing="false" onAction="#btnResetHandler" text="RESET" />
+      <Label fx:id="lblBeurt" layoutX="448.0" layoutY="157.0" prefHeight="31.0" prefWidth="192.0" text="Zwart is aan de beurt." />
+      <Label fx:id="lblZwart" layoutX="448.0" layoutY="207.0" prefHeight="21.0" prefWidth="192.0" text="Zwart heeft nog 12 pionnen." />
+      <Label fx:id="lblWit" layoutX="448.0" layoutY="265.0" prefHeight="21.0" prefWidth="192.0" text="Wit heeft nog 12 pionnen." />
+      <Button fx:id="btnOpnieuw" layoutX="489.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnOpnieuwHandler" text="Opnieuw spelen">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblKamikazeZwart" layoutX="448.0" layoutY="228.0" prefHeight="21.0" prefWidth="192.0" text="Zwart heeft nog 1 kamikaze." />
+      <Label fx:id="lblKamikazeWit" layoutX="448.0" layoutY="286.0" prefHeight="21.0" prefWidth="192.0" text="Wit heeft nog 1 kamikaze." />
+      <Button fx:id="btnHome" layoutX="504.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnHomeHandler" text="Home" />
+    </children>
+</AnchorPane>
